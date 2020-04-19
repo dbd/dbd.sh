@@ -5,6 +5,8 @@ stages:
       dockerfilePath: ./Dockerfile
       buildContext: .
       tag: dbd.sh
+      pushRemote: true
+      registry: 127.0.0.1:34756
   when:
     branch:
       include:
@@ -15,4 +17,5 @@ stages:
       image: python:latest
       shellScript: echo "Hello World"
 timeout: 60
+branch: {}
 notification: {}
