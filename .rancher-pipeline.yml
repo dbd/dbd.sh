@@ -14,7 +14,7 @@ stages:
   steps:
   - runScriptConfig:
       image: python:latest
-      shellScript: echo "Hello World"
+      shellScript: echo "Hello World!"
 timeout: 60
 branch: {}
 notification: {}
