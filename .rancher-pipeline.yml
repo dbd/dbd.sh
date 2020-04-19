@@ -4,7 +4,7 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: dbd.sh
+      tag: dbdaniel/dbd.sh
       pushRemote: true
       registry: index.docker.io
   when:
