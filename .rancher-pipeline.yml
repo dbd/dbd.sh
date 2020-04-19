@@ -12,9 +12,8 @@ stages:
       - master
 - name: deploy
   steps:
-  - runScriptConfig:
-      image: python:latest
-      shellScript: echo "Hello World, again!"
+  - applyYamlConfig:
+      path: ./deployment.yaml
 timeout: 60
 branch: {}
 notification: {}
