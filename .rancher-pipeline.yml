@@ -5,7 +5,6 @@ stages:
       dockerfilePath: ./Dockerfile
       buildContext: .
       tag: dbd.sh
-      pushRemote: true
       registry: registry.dbd.sh
   when:
     branch:
