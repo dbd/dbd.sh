@@ -4,7 +4,7 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: dbdaniel/dbd.sh
+      tag: dbdaniel/dbd.sh:${CICD_EXECUTION_SEQUENCE}
       pushRemote: true
       registry: index.docker.io
   when:
