@@ -10,7 +10,7 @@ func main() {
 	http.Handle("/", fs)
 
 	log.Println("Listening on :20300...")
-	err := http.ListenAndServe(":20300", nil)
+	err := http.ListenAndServe("0.0.0.0:20300", nil)
 	if err != nil {
 		log.Fatal(err)
 	}
