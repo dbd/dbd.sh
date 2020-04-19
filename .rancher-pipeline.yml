@@ -6,7 +6,7 @@ stages:
       buildContext: .
       tag: dbd.sh
       pushRemote: true
-      registry: 10.5.0.29:31893
+      registry: 10.5.0.29:31038
   when:
     branch:
       include:
