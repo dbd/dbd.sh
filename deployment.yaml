@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: dbd-sh
-        image: dbdaniel/dbd.sh:${CICD_EXECUTION_SEQUENCE}
+        image: dbdaniel/dbd.sh
         ports:
         - containerPort: 20300
           protocol: TCP
